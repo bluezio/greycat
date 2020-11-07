@@ -246,7 +246,7 @@
     <repositories>
         <repository>
             <id>datathings.public</id>
-            <url>https://registry.datathings.com/repository/public/</url>
+            <url>https://dl.bintray.com/bluezio/maven</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -259,7 +259,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>datathings.public</id>
-            <url>https://registry.datathings.com/repository/public/</url>
+            <url>https://dl.bintray.com/bluezio/maven</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -270,14 +270,11 @@
     </pluginRepositories>
 
     <distributionManagement>
-        <repository>
-            <id>datathings.protected</id>
-            <url>https://registry.datathings.com/repository/public/</url>
-        </repository>
-        <snapshotRepository>
-            <id>datathings.protected</id>
-            <url>https://registry.datathings.com/repository/public/</url>
-        </snapshotRepository>
+      <repository>
+        <id>bintray-bluezio</id>
+        <name>bluezio-maven</name>
+        <url>https://api.bintray.com/maven/bluezio/maven/greycat/;publish=1</url>
+      </repository>
     </distributionManagement>
 
 </project>
